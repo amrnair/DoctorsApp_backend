@@ -14,7 +14,7 @@ const path = require('path');
 const app = express();
 
 //defining a port where the server will run 
-const PORT = 3001;
+const PORT = 8000;
 
 
 
@@ -46,7 +46,7 @@ app.use(patientRoutes)
 
 
 
-mongoose.connect("mongodb+srv://nitin07singhal:dCFOl2TRnlMLUFhb@workshop.uktxcbm.mongodb.net/doctorsapp?retryWrites=true&w=majority&appName=workshop").then(()=>{
+mongoose.connect("mongodb+srv://amruthasnair2020:AmruthaSatheesan@cluster0.sydvava.mongodb.net/doctorsapp?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("connected to mongoDB");
 }).catch((err)=>{
     console.log(err);
